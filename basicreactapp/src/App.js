@@ -1,5 +1,11 @@
+import Raza from "./raza.js";
+
 function App() {
-  return <h1>hello</h1>;
+  return (
+    <>
+      <Raza />
+    </>
+  );
 }
 
 export default App;

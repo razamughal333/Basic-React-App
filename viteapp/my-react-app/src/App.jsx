@@ -1,19 +1,16 @@
-function Greetings({ name, age }) {
-  return (
-    <h2>
-      Greetings, {name}, age is {age}
-    </h2>
-  );
-}
+import Card from "./components/Card";
 
 function App() {
+  // const student = {
+  //   name: "raaza",
+  //   age: 11,
+  // };
+
+  // const arr = [1, 2, 3, 4];
   return (
     <>
-      <h1>Hello, Raza!</h1>
-      <p>This is my first React component.</p>
-
-      <Greetings name="Raza" age={22} />
-      <Greetings name="Ali" age={12} />
+      <Card userName="raza ahmed" btnText="click me" />
+      <Card userName="raza jjj" />
     </>
   );
 }

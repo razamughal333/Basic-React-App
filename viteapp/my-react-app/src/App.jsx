@@ -1,15 +1,14 @@
 import Card from "./components/Card";
 import Game from "./Game";
 
-function App() {
-  // const student = {
-  //   name: "raaza",
-  //   age: 11,
-  // };
+const ali = {
+  age: 133333,
+};
 
-  // const arr = [1, 2, 3, 4];
+function App() {
   return (
     <>
+      <h1> helloooo {ali.age}</h1>
       <br />
       <br />
       <br />

@@ -1,25 +1,22 @@
-import Card from "./components/Card";
-import Game from "./Game";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const ali = {
-  age: 133333,
-};
+function Home() {
+  return <h1>Home Page</h1>;
+}
+
+function About() {
+  return <h1>About Page</h1>;
+}
 
 function App() {
   return (
-    <>
-      <h1> helloooo {ali.age}</h1>
-      <br />
-      <br />
-      <br />
-      <Game />
-      <br />
-      <br />
-      <br />
-
-      <Card userName="raza ahmed" btnText="click me" />
-      <Card userName="raza jjj" />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
+
 export default App;

@@ -12,7 +12,11 @@ function Home() {
   return <h1>Home Page</h1>;
 }
 
-export function LoginForm() {
+function NotFound() {
+  return <h1>404 - Page Not Found</h1>;
+}
+
+function LoginForm() {
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
